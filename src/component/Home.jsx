@@ -1,4 +1,4 @@
-import "./Home.css";
+import "./home.css";
 import logo from "../assets/logo.png";
 import { useState } from "react";
 import Popup from "./Popup";
