@@ -1,0 +1,118 @@
+.hero-subtext {
+  margin-top: 2px;
+  font-size: 1.1rem;
+  color: #7a7a90;
+}
+
+.hero-section {
+  background-color: #f8f8fc; 
+  min-height: 45vh;
+}
+
+.home-left{
+    color: #ffd9dc;
+    background-color: #fe3e55;
+}
+
+/* splite styling starts */
+.heroSplitSection {
+  background-color: #f8f8fc;
+  width: 100%;
+}
+
+
+.hero-left {
+  background-color: #ff445c;
+  color: white;
+  border-radius: 30px;
+  padding: 50px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.hero-heading {
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.hero-description {
+  margin: 20px 0;
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+.hero-buttons .btn {
+  margin-right: 15px;
+  font-weight: 500;
+  padding: 10px 25px;
+}
+
+.hero-card {
+  position: relative;
+  border-radius: 30px;
+  overflow: hidden;
+  width: 100%;
+  max-width: 400px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-around;
+  height: 100%;
+}
+
+.hero-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: white;
+  text-shadow: 0 0 5px black;
+}
+
+.hero-card-footer {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: white;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.play-button {
+  font-size: 24px;
+  color: black;
+  background: white;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-large {
+  font-size: 40px;
+  color: "black";
+}
+/* splite styling end */
+
+
+
