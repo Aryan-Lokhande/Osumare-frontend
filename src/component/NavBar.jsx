@@ -27,7 +27,7 @@ export default function Navbar() {
         <span className="navbar-toggler-icon" />
       </button>
 
-      <div className="collapse navbar-collapse justify-content-end" id="navbarNav" style={{ marginRight: '80px' }}>
+      <div className="collapse navbar-collapse justify-content-end bg-white" id="navbarNav" style={{ marginRight: '80px' }}>
         <ul className="navbar-nav align-items-center mb-2 mb-lg-0">
           <li className="nav-item"><a className="nav-link text-dark" href="#about-us">About Us</a></li>
           <li className="nav-item"><a className="nav-link text-dark" href="#features">Features</a></li>

@@ -6,7 +6,6 @@
 
 .hero-section {
   background-color: #f8f8fc; 
-  min-height: 45vh;
 }
 
 .home-left{
@@ -115,4 +114,11 @@
 /* splite styling end */
 
 
+@media (max-width: 991.98px) {
+  #navbarNav {
+    background-color: white !important;
+    padding: 1rem;
+    border-radius: 0.5rem;
+  }
+}
 

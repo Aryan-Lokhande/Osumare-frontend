@@ -62,7 +62,7 @@ export default function Home() {
         </div>
 
         {/* Red Box and home Image */}
-        <div className="container py-5 heroSplitSection">
+        <div className="container py-4 heroSplitSection">
           <div className="row align-items-stretch no-gutter">
             {/* Left Side */}
             <div className="col-md-8 d-flex herobox">
@@ -119,7 +119,7 @@ export default function Home() {
                       <small>Chief Productivity Enthusiast</small>
                     </div>
                   </div>
-                    <i class="fa-solid fa-circle-play icon-large"></i>
+                  <i class="fa-solid fa-circle-play icon-large"></i>
                 </div>
               </div>
             </div>
@@ -136,43 +136,44 @@ export default function Home() {
         </div>
       </div>
       {/* features */}
-      {<FeatureSection/>}
+      {<FeatureSection />}
       {/* testimonial */}
-      {<TestimonialSection/>}
-      {<ExtraImg/>}
+      {<TestimonialSection />}
+      {<ExtraImg />}
       <br />
       {/* displaytable */}
-      <table className="table table-bordered">
-        <thead className="table-light">
-          <tr>
-            <th>
-              <input type="checkbox" />
-            </th>
-            <th>Name</th>
-            <th>Gender</th>
-            <th>Language</th>
-            <th>Email</th>
-          </tr>
-        </thead>
-        <tbody>
-          {formDataList.map((entry, index) => (
-            <tr key={index}>
-              <td>
+      <div className="table-responsive">
+        <table className="table table-bordered">
+          <thead className="table-light">
+            <tr>
+              <th>
                 <input type="checkbox" />
-              </td>
-              <td>
-                {entry.firstName} {entry.lastName}
-              </td>
-              <td>{entry.gender}</td>
-              <td>{entry.languages.join(", ")}</td>
-              <td>{entry.email}</td>
+              </th>
+              <th>Name</th>
+              <th>Gender</th>
+              <th>Language</th>
+              <th>Email</th>
             </tr>
-          ))}
-        </tbody>
-      </table>
-
+          </thead>
+          <tbody>
+            {formDataList.map((entry, index) => (
+              <tr key={index}>
+                <td>
+                  <input type="checkbox" />
+                </td>
+                <td>
+                  {entry.firstName} {entry.lastName}
+                </td>
+                <td>{entry.gender}</td>
+                <td>{entry.languages.join(", ")}</td>
+                <td>{entry.email}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
       {/* footer */}
-      {<Footer/>}
+      {<Footer />}
 
       {showPopup && (
         <Popup
