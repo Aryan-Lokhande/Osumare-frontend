@@ -1,10 +1,13 @@
-import "./home.css";
+import "../styles/home.css";
 import trust from "../assets/trust.png";
 import man from "../assets/homeImg.png";
 import { useState } from "react";
 import Popup from "./Popup";
 import Thanks from "./Thanks";
 import TestimonialSection from "./TestimonialSection";
+import FeatureSection from "./FeatureSection";
+import ExtraImg from "./ExtraImg";
+import Footer from "./Footer";
 
 export default function Home() {
   const [showPopup, setShowPopup] = useState(false);
@@ -132,8 +135,11 @@ export default function Home() {
           />
         </div>
       </div>
+      {/* features */}
+      {<FeatureSection/>}
       {/* testimonial */}
       {<TestimonialSection/>}
+      {<ExtraImg/>}
       <br />
       {/* displaytable */}
       <table className="table table-bordered">
@@ -164,6 +170,9 @@ export default function Home() {
           ))}
         </tbody>
       </table>
+
+      {/* footer */}
+      {<Footer/>}
 
       {showPopup && (
         <Popup

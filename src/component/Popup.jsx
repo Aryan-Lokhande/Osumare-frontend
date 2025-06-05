@@ -1,4 +1,4 @@
-import "./Popup.css";
+import "../styles/Popup.css";
 
 export default function Popup({
   onClose,
@@ -46,6 +46,7 @@ export default function Popup({
                 onChange={(e) =>
                   setFormData({ ...formData, firstName: e.target.value })
                 }
+                required
               />
             </div>
             <div>
@@ -56,7 +57,7 @@ export default function Popup({
                 value={formData.lastName}
                 onChange={(e) =>
                   setFormData({ ...formData, lastName: e.target.value })
-                }
+                }                
               />
             </div>
           </div>
@@ -72,6 +73,7 @@ export default function Popup({
                 onChange={(e) =>
                   setFormData({ ...formData, gender: e.target.value })
                 }
+                required
               />{" "}
               Male
             </label>
@@ -154,6 +156,7 @@ export default function Popup({
             onChange={(e) =>
               setFormData({ ...formData, email: e.target.value })
             }
+            required
           />
 
           <div className="terms">

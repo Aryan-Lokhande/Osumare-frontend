@@ -1,4 +1,4 @@
-import './Popup.css';
+import "../styles/Popup.css";
 
 export default function Thanks({ onClose }) {
   return (
